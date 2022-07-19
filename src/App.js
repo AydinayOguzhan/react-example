@@ -10,7 +10,7 @@ function App() {
   }
 
   return (
-    <div onClick={click} style={{width:'100px', height:'100px', backgroundColor:"blue", marginTop:"50px" ,marginLeft:margin }}>
+    <div className='div-class' onClick={click} style={{width:'100px', height:'100px', backgroundColor:"blue", marginTop:"50px" ,marginLeft:margin }}>
     </div>
   );
 }

@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.div-class:hover{
+  width:'100px' !important;
+  height:'100px' !important;
+  background-color: blueviolet !important;
+}
