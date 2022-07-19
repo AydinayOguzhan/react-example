@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [margin, setMargin] = useState("0px");
+  const click = () =>{
+    setMargin(`${parseInt(margin) + 100}px`);
+    console.log(`margin: ${margin}`);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div onClick={click} style={{width:'100px', height:'100px', backgroundColor:"blue", marginTop:"50px" ,marginLeft:margin }}>
     </div>
   );
 }
